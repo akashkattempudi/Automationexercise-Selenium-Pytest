@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d8148f2-32b1-4d55-a791-43f7491dcb3b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/selenium_tests/test_data.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2zuYdb5hocFOEWWtwNC3MLkGGq1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for selenium_tests.pytest_pages.test_place_order_register_checkout.test_place_order_register_checkout.executor": "Run",
+    "Python tests.Python tests for test_user_login.test_user_login.executor": "Run",
+    "Python tests.Python tests for test_user_logout.test_logout.executor": "Run",
+    "Python tests.Python tests for test_user_register.test_user_registration.executor": "Run",
+    "Python tests.Python tests in Register.py.executor": "Run",
+    "Python tests.Python tests in login.py.executor": "Run",
+    "Python tests.Python tests in test_add_products_cart.py.executor": "Run",
+    "Python tests.Python tests in test_contact_us.py.executor": "Run",
+    "Python tests.Python tests in test_place_order_register_before_checkout.py.executor": "Run",
+    "Python tests.Python tests in test_place_order_register_checkout.py.executor": "Run",
+    "Python tests.Python tests in test_search_products_cart_after_login.py.executor": "Run",
+    "Python tests.Python tests in test_subscription_home_page.py.executor": "Run",
+    "Python tests.Python tests in test_testcases.py.executor": "Run",
+    "Python tests.Python tests in test_user_login.py.executor": "Run",
+    "Python tests.Python tests in test_user_login_invalid.py.executor": "Run",
+    "Python tests.Python tests in test_user_register.py.executor": "Run",
+    "Python tests.Python tests in test_user_register_invalid.py.executor": "Run",
+    "Python tests.pytest in PyCharm 2025.2.executor": "Run",
+    "Python tests.pytest in bin.executor": "Run",
+    "Python tests.pytest login.executor": "Run",
+    "Python tests.pytest register.executor": "Run",
+    "Python tests.pytest.executor": "Run",
+    "Python.Unnamed.executor": "Run",
+    "Python.api.executor": "Run",
+    "Python.config.executor": "Run",
+    "Python.contact_us_form.executor": "Run",
+    "Python.login.executor": "Run",
+    "Python.login_page.executor": "Run",
+    "Python.logout_page.executor": "Run",
+    "Python.new.executor": "Run",
+    "Python.search_products_cart_after_login_page.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/akash/PycharmProjects/Practicepython/selenium_tests/pytest_pages",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pytest_pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akash\PycharmProjects\Practicepython" />
+      <recent name="C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pytest_pages" />
+      <recent name="C:\Users\akash\PycharmProjects\Practicepython\selenium_tests" />
+      <recent name="C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Practicepython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (Practicepython)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\akash\PycharmProjects\Practicepython " />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="Practicepython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (Practicepython)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\akash\PycharmProjects\Practicepython " />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in PyCharm 2025.2" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="Practicepython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (Practicepython)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--browser\u003dfirefox --html\u003dreports/report.html --self-contained-html -q&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-b3ae9b5d7125-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.439" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d8148f2-32b1-4d55-a791-43f7491dcb3b" name="Changes" comment="" />
+      <created>1752582513038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752582513038</updated>
+    </task>
+    <servers />
+  </component>
+</project>
