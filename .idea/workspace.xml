@@ -28,48 +28,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for selenium_tests.pytest_pages.test_place_order_register_checkout.test_place_order_register_checkout.executor": "Run",
-    "Python tests.Python tests for test_user_login.test_user_login.executor": "Run",
-    "Python tests.Python tests for test_user_logout.test_logout.executor": "Run",
-    "Python tests.Python tests for test_user_register.test_user_registration.executor": "Run",
-    "Python tests.Python tests in Register.py.executor": "Run",
-    "Python tests.Python tests in login.py.executor": "Run",
-    "Python tests.Python tests in test_add_products_cart.py.executor": "Run",
-    "Python tests.Python tests in test_contact_us.py.executor": "Run",
-    "Python tests.Python tests in test_place_order_register_before_checkout.py.executor": "Run",
-    "Python tests.Python tests in test_place_order_register_checkout.py.executor": "Run",
-    "Python tests.Python tests in test_search_products_cart_after_login.py.executor": "Run",
-    "Python tests.Python tests in test_subscription_home_page.py.executor": "Run",
-    "Python tests.Python tests in test_testcases.py.executor": "Run",
-    "Python tests.Python tests in test_user_login.py.executor": "Run",
-    "Python tests.Python tests in test_user_login_invalid.py.executor": "Run",
-    "Python tests.Python tests in test_user_register.py.executor": "Run",
-    "Python tests.Python tests in test_user_register_invalid.py.executor": "Run",
-    "Python tests.pytest in PyCharm 2025.2.executor": "Run",
-    "Python tests.pytest in bin.executor": "Run",
-    "Python tests.pytest login.executor": "Run",
-    "Python tests.pytest register.executor": "Run",
-    "Python tests.pytest.executor": "Run",
-    "Python.Unnamed.executor": "Run",
-    "Python.api.executor": "Run",
-    "Python.config.executor": "Run",
-    "Python.contact_us_form.executor": "Run",
-    "Python.login.executor": "Run",
-    "Python.login_page.executor": "Run",
-    "Python.logout_page.executor": "Run",
-    "Python.new.executor": "Run",
-    "Python.search_products_cart_after_login_page.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/akash/PycharmProjects/Practicepython/selenium_tests/pytest_pages",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for selenium_tests.pytest_pages.test_place_order_register_checkout.test_place_order_register_checkout.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_user_login.test_user_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_user_logout.test_logout.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_user_register.test_user_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in Register.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in login.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_add_products_cart.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_contact_us.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_place_order_register_before_checkout.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_place_order_register_checkout.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_search_products_cart_after_login.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_subscription_home_page.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_testcases.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_user_login.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_user_login_invalid.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_user_register.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_user_register_invalid.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in PyCharm 2025.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in bin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest register.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.contact_us_form.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logout_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new.executor&quot;: &quot;Run&quot;,
+    &quot;Python.search_products_cart_after_login_page.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/akash/PycharmProjects/Practicepython/selenium_tests/pytest_pages&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pytest_pages" />
@@ -136,7 +136,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;--browser\u003dfirefox --html\u003dreports/report.html --self-contained-html -q&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--browser\u003dfirefox --alluredir\u003dreports/allure-results -q&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
