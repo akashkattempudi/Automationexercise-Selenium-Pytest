@@ -1,4 +1,4 @@
-Automation exercise – Selenium + Pytest + Behave
+Ecommerce-automation-selenium-pytest-bdd
 
 This repository contains an end-to-end Selenium automation framework built using Python, Pytest, Behave (BDD), and the Page Object Model (POM) design pattern. It automates functional testing for the Automation Exercise demo application.
 
