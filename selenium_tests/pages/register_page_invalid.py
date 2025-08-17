@@ -1,13 +1,9 @@
-import random
-import time
-import json
-import selenium
-from selenium import webdriver
+
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
+
 from selenium_tests.test_data import test_data, test_login_data
 from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.webdriver import Keys
+
 
 
 class register_page:

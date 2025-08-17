@@ -30,6 +30,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Batch.run.executor&quot;: &quot;Run&quot;,
+    &quot;Batch.run_bdd_pytest.executor&quot;: &quot;Run&quot;,
+    &quot;Batch.run_behave.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python tests.Python tests for selenium_tests.pytest_pages.test_place_order_register_checkout.test_place_order_register_checkout.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_user_login.test_user_login.executor&quot;: &quot;Run&quot;,
@@ -54,6 +57,7 @@
     &quot;Python tests.pytest register.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.pytest.executor&quot;: &quot;Run&quot;,
     &quot;Python.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Python.add_products_cart_steps.executor&quot;: &quot;Run&quot;,
     &quot;Python.api.executor&quot;: &quot;Run&quot;,
     &quot;Python.config.executor&quot;: &quot;Run&quot;,
     &quot;Python.contact_us_form.executor&quot;: &quot;Run&quot;,

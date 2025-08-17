@@ -1,0 +1,593 @@
+<!DOCTYPE HTML><html><head><title>Behave Test Report</title><meta content="text/html;charset=utf-8" http-equiv="content-type" /><style type="text/css"><!--
+@charset "utf-8"; .passed{}.failed{}.error{}.skipped{}.undefined{}.summary{}.failed_scenarios{}.footer{}body{font-size:0;color:white;margin:0;padding:0}.behave,td,th{font:normal 11px "Lucida Grande",Helvetica,sans-serif;background:white;color:black}.behave #behave-header,td #behave-header,th #behave-header{background:#65c400;color:white;height:8em}.behave #behave-header #expand-collapse p,td #behave-header #expand-collapse p,th #behave-header #expand-collapse p{float:right;margin:0 0 0 10px}.behave .scenario h3,td .scenario h3,th .scenario h3,.background h3{font-size:11px;padding:3px;margin:0;background:#65c400;color:white;font-weight:bold}.background h3{font-size:1.2em;background:#666}.behave h1,td h1,th h1{margin:0 10px 0 10px;padding:10px;font-family:"Lucida Grande",Helvetica,sans-serif;font-size:2em;position:absolute}.behave h4,td h4,th h4{margin-bottom:2px}.behave div.feature,td div.feature,th div.feature{padding:2px;margin:0 10px 5px 10px}.behave div.examples,td div.examples,th div.examples{padding:0 0 0 1em}.behave .stats,td .stats,th .stats{margin:2em}.behave .summary ul.features li,td .summary ul.features li,th .summary ul.features li{display:inline}.behave .step_name,td .step_name,th .step_name{float:left}.behave .step_file,td .step_file,th .step_file{text-align:right;color:#999}.behave .step_file a,td .step_file a,th .step_file a{color:#999}.behave .scenario_file,td .scenario_file,th .scenario_file{float:right;color:#999}.behave .step_duration{padding-left:1em}.behave .tag,td .tag,th .tag{font-weight:bold;color:#246ac1}.behave .backtrace,td .backtrace,th .backtrace{margin-top:0;margin-bottom:0;margin-left:1em;color:black}.behave a,td a,th a{color:#be5c00;margin-right:.5em}.behave a:hover,td a:hover,th a:hover{text-decoration:none}.behave a:visited,td a:visited,th a:visited{font-weight:normal}.behave a div.examples,td a div.examples,th a div.examples{margin:5px 0 5px 15px;color:black}.behave .outline table,td .outline table,th .outline table{margin:0 0 5px 10px}.behave table,td table,th table{border-collapse:collapse}.behave table td,td table td,th table td{padding:3px 3px 3px 5px}.behave table td.failed,.behave table td.passed,.behave table td.skipped,.behave table td.pending,.behave table td.undefined,td table td.failed,td table td.passed,td table td.skipped,td table td.pending{padding-left:18px;padding-right:10px}.behave table td.failed,td table td.failed,th table td.failed{border-left:5px solid #c20000;border-bottom:1px solid #c20000;background:#fffbd3;color:#c20000}.behave table td.passed,td table td.passed,th table td.passed{border-left:5px solid #65c400;border-bottom:1px solid #65c400;background:#dbffb4;color:#3d7700}.behave table td.skipped,td table td.skipped,th table td.skipped{border-left:5px solid aqua;border-bottom:1px solid aqua;background:#e0ffff;color:#011}.behave table td.pending,td table td.pending,th table td.pending{border-left:5px solid #faf834;border-bottom:1px solid #faf834;background:#fcfb98;color:#131313}.behave table td.undefined,td table td.undefined,th table td.undefined{border-left:5px solid #faf834;border-bottom:1px solid #faf834;background:#fcfb98;color:#131313}.behave table td.message,td table td.message,th table td.message{border-left:5px solid aqua;border-bottom:1px solid aqua;background:#e0ffff;color:#011}.behave ol,td ol,th ol{list-style:none;margin:0;padding:0}.behave ol li.step,td ol li.step,th ol li.step{padding:3px 3px 3px 18px;margin:5px 0 5px 5px}.behave ol li,td ol li,th ol li{margin:0 0 0 1em;padding:0 0 0 .2em}.behave ol li span.param,td ol li span.param,th ol li span.param{font-weight:bold}.behave ol li.failed,td ol li.failed,th ol li.failed{border-left:5px solid #c20000;border-bottom:1px solid #c20000;background:#fffbd3;color:#c20000}.behave ol li.passed,td ol li.passed,th ol li.passed{border-left:5px solid #65c400;border-bottom:1px solid #65c400;background:#dbffb4;color:#3d7700}.behave ol li.skipped,td ol li.skipped,th ol li.skipped{border-left:5px solid aqua;border-bottom:1px solid aqua;background:#e0ffff;color:#011}.behave ol li.pending,td ol li.pending,th ol li.pending{border-left:5px solid #faf834;border-bottom:1px solid #faf834;background:#fcfb98;color:#131313}.behave ol li.undefined,td ol li.undefined,th ol li.undefined{border-left:5px solid #faf834;border-bottom:1px solid #faf834;background:#fcfb98;color:#131313}.behave ol li.message,td ol li.message,th ol li.message{border-left:5px solid aqua;border-bottom:1px solid aqua;background:#e0ffff;color:#011;margin-left:10px}.behave #summary,td #summary,th #summary{margin:0;padding:5px 10px;text-align:right;top:0;right:0;float:right}.behave #summary p,td #summary p,th #summary p{margin:0 0 0 2px}.behave #summary #totals,td #summary #totals,th #summary #totals{font-size:1.2em}.behave .scenario h3.failed,td .scenario h3.failed,th .scenario h3.failed,.background h3.failed{background:#c20000}.behave #behave-header.failed,td #behave-header.failed,th #behave-header.failed{background:#c20000}.behave .scenario h3.undefined,td .scenario h3.undefined,th .scenario h3.undefined,.background h3.undefined{background:#faf834;color:black}.behave #behave-header.undefined,td #behave-header.undefined,th #behave-header.undefined{background:#faf834;color:black}#behave-header.failed a{color:white}pre{white-space:pre-wrap}
+--></style><script type="text/javascript"><!--
+function Collapsible_toggle(id){var elem=document.getElementById(id);elem.style.display=(elem.style.display=='none'?'block':'none');return false;};function Collapsible_expandAll(className){var elems=document.getElementsByClassName(className);for(var i=0;i<elems.length;i++){elems[i].style.display='block';}};function Collapsible_collapseAll(className){var elems=document.getElementsByClassName(className);for(var i=0;i<elems.length;i++){elems[i].style.display='none';}};function Collapsible_expandAllFailed(){var elems=document.getElementsByClassName('failed');for(var i=0;i<elems.length;i++){var elem=elems[i];if(elem.nodeName=='H3'){elem.parentElement.getElementsByTagName('ol')[0].style.display='block';}}}
+--></script></head><body><div class="behave"><div id="behave-header" class="failed"><div id="label"><h1>Behave Test Report</h1></div><div id="summary"><p id="totals"><p id="feature_totals">Features: passed: 8, failed: 13</p><p id="scenario_totals">Scenarios: passed: 8, failed: 13</p><p id="step_totals">Steps: passed: 57, failed: 12, skipped: 20, undefined: 3</p></p><p id="duration">Finished in 106.4 seconds</p><div id="expand-collapse"><a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a><span> | </span><a id="collapser" href="#" onclick="Collapsible_collapseAll('scenario_steps')">Collapse All</a><span> | </span><a id="failed_expander" href="#" onclick="Collapsible_expandAllFailed()">Expand All Failed</a></div></div></div><div class="feature"><h2><span class="val">Feature: Add products to cart</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/add_products_cart.feature:3</span><h3 onclick="Collapsible_toggle('scenario_0')"><span class="val">Scenario: User adds the first product to cart and views the cart</span></h3><ol class="scenario_steps" id="scenario_0"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the add products cart page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/add_products_cart_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I add the first product to the cart</span><small class="step_duration">(0.603s)</small></div><div class="step_file"><span>features/steps/add_products_cart_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I click Continue Shopping</span><small class="step_duration">(0.579s)</small></div><div class="step_file"><span>features/steps/add_products_cart_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I view the cart</span><small class="step_duration">(0.423s)</small></div><div class="step_file"><span>features/steps/add_products_cart_steps.py:16</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">Then </span><span class="step val">the product should be visible in the cart</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/add_products_cart_steps.py:20</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Add product review</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/add_review_product.feature:3</span><h3 onclick="Collapsible_toggle('scenario_1')"><span class="val">Scenario: User adds a review for a product successfully</span></h3><ol class="scenario_steps" id="scenario_1"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the add review product page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/add_review_product_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I navigate to the first product</span><small class="step_duration">(1.134s)</small></div><div class="step_file"><span>features/steps/add_review_product_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val"><span>I add a review with name "</span><b>Reviewer</b><span>", email "</span><b>reviewer@example.com</b><span>", and message "</span><b>Great product!</b><span>"</span></span><small class="step_duration">(0.304s)</small></div><div class="step_file"><span>features/steps/add_review_product_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">Then </span><span class="step val">I should see a success message for the review</span><small class="step_duration">(0.020s)</small></div><div class="step_file"><span>features/steps/add_review_product_steps.py:16</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Contact Us form submission</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/contact_us_form.feature:3</span><h3 onclick="Collapsible_toggle('scenario_2')"><span class="val">Scenario: User submits the Contact Us form successfully</span></h3><ol class="scenario_steps" id="scenario_2"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the homepage</span><small class="step_duration">(0.002s)</small></div><div class="step_file"><span>features/steps/contact_us_form_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I click the Contact Us button</span><small class="step_duration">(1.311s)</small></div><div class="step_file"><span>features/steps/contact_us_form_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I fill the Contact Us form</span><small class="step_duration">(0.357s)</small></div><div class="step_file"><span>features/steps/contact_us_form_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I click the Submit button</span><small class="step_duration">(0.074s)</small></div><div class="step_file"><span>features/steps/contact_us_form_steps.py:16</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">Then </span><span class="step val">I should see a success message for contact form submission</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/contact_us_form_steps.py:20</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: User logout functionality</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/logout.feature:3</span><h3 onclick="Collapsible_toggle('scenario_3')" class="failed"><span class="val">Scenario: User logs in and logs out successfully</span></h3><ol class="scenario_steps" id="scenario_3"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the logout page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/logout_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val">I login as a valid user</span><small class="step_duration">(10.025s)</small></div><div class="step_file"><span>features/steps/logout_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_1')">Error Message</a><pre id="embed_1" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\logout_steps.py", line 10, in step_impl
+    context.logout.login_user_page()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\logout_page.py", line 12, in login_user_page
+    logout.user_login_data()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\login_page_valid.py", line 10, in user_login_data
+    self.driver.find_element(By.CSS_SELECTOR,"input[data-qa='login-email']").send_keys(user['email'])
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[data-qa='login-email']"}
+  (Session info: MicrosoftEdge=139.0.3405.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca6591a8]
+	(No symbol) [0x0x7ff7ca65946b]
+	(No symbol) [0x0x7ff7ca699a67]
+	(No symbol) [0x0x7ff7ca67a6ff]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Place order after login before checkout</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/place_order_login_before_checkout.feature:3</span><h3 onclick="Collapsible_toggle('scenario_4')" class="failed"><span class="val">Scenario: User logs in, adds product to cart, and proceeds to cart</span></h3><ol class="scenario_steps" id="scenario_4"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the place order login before checkout page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/place_order_login_before_checkout_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val">I login first then proceed to checkout</span><small class="step_duration">(1.078s)</small></div><div class="step_file"><span>features/steps/place_order_login_before_checkout_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_2')">Error Message</a><pre id="embed_2" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\place_order_login_before_checkout_steps.py", line 10, in step_impl
+    context.checkout_page.login_first_then_checkout()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\place_order_login_before_checkout_page.py", line 13, in login_first_then_checkout
+    login.user_login_data()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\login_page_valid.py", line 10, in user_login_data
+    self.driver.find_element(By.CSS_SELECTOR,"input[data-qa='login-email']").send_keys(user['email'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+Captured stdout:
+HOOK-ERROR in after_step: UnexpectedAlertPresentException: Alert Text: Press OK to proceed!
+Message: unexpected alert open: {Alert text : Press OK to proceed!}
+  (Session info: MicrosoftEdge=139.0.3405.102)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca697a0a]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Place order after registration before checkout</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/place_order_register_before_checkout.feature:3</span><h3 onclick="Collapsible_toggle('scenario_5')" class="failed"><span class="val">Scenario: User registers, adds product to cart, then proceeds to checkout</span></h3><ol class="scenario_steps" id="scenario_5"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the place order register before checkout page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/place_order_register_before_checkout_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val">I register first then proceed to checkout</span><small class="step_duration">(1.427s)</small></div><div class="step_file"><span>features/steps/place_order_register_before_checkout_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_3')">Error Message</a><pre id="embed_3" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\place_order_register_before_checkout_steps.py", line 10, in step_impl
+    context.checkout_page.register_first_then_checkout()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\place_order_register_before_checkout_page.py", line 17, in register_first_then_checkout
+    register.user_register_data()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\register_page_valid.py", line 14, in user_register_data
+    self.driver.find_element(By.CSS_SELECTOR,"input[data-qa='signup-email']").send_keys(f"{self.user["email"]}{random.randint(1,99999)}@gmail.com")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+Captured stdout:
+HOOK-ERROR in after_step: UnexpectedAlertPresentException: Alert Text: Press OK to proceed!
+Message: unexpected alert open: {Alert text : Press OK to proceed!}
+  (Session info: MicrosoftEdge=139.0.3405.102)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca697a0a]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Place order after registration with checkout and payment</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/place_order_register_checkout.feature:3</span><h3 onclick="Collapsible_toggle('scenario_6')"><span class="val">Scenario: User registers, places order with payment details</span></h3><ol class="scenario_steps" id="scenario_6"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the place order register checkout page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/place_order_register_checkout_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I add a product and checkout</span><small class="step_duration">(3.061s)</small></div><div class="step_file"><span>features/steps/place_order_register_checkout_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val"><span>I register and place an order with name "</span><b>Test User</b><span>", card number "</span><b>4111111111111111</b><span>", cvc "</span><b>123</b><span>", month "</span><b>12</b><span>", and year "</span><b>2025</b><span>"</span></span><small class="step_duration">(7.506s)</small></div><div class="step_file"><span>features/steps/place_order_register_checkout_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">Then </span><span class="step val">I should see the order success message</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/place_order_register_checkout_steps.py:23</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Products page interactions</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/products_page.feature:3</span><h3 onclick="Collapsible_toggle('scenario_7')"><span class="val">Scenario: User navigates and verifies products page and product details</span></h3><ol class="scenario_steps" id="scenario_7"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the products page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I verify the home page</span><small class="step_duration">(0.010s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I click products</span><small class="step_duration">(0.449s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I verify user navigation</span><small class="step_duration">(0.045s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:16</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I verify products are visible</span><small class="step_duration">(0.021s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:20</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I view a product</span><small class="step_duration">(0.546s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:24</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I verify the user is on the product page</span><small class="step_duration">(0.040s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:28</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I verify product details</span><small class="step_duration">(0.076s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:32</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">Then </span><span class="step val">the product details should be displayed correctly</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/products_page_steps.py:36</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: User registration with existing email</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/register_existing_email.feature:3</span><h3 onclick="Collapsible_toggle('scenario_8')" class="failed"><span class="val">Scenario: User tries to register with an email that already exists</span></h3><ol class="scenario_steps" id="scenario_8"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the registration page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/register_existing_email_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val">I enter registration details with an existing email</span><small class="step_duration">(10.026s)</small></div><div class="step_file"><span>features/steps/register_existing_email_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_4')">Error Message</a><pre id="embed_4" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\register_existing_email_steps.py", line 11, in step_impl
+    context.register.user_register_data()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\register_page_valid.py", line 13, in user_register_data
+    self.driver.find_element(By.CSS_SELECTOR,"input[placeholder='Name']").send_keys(self.user["name"])
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[placeholder='Name']"}
+  (Session info: MicrosoftEdge=139.0.3405.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca6591a8]
+	(No symbol) [0x0x7ff7ca65946b]
+	(No symbol) [0x0x7ff7ca699a67]
+	(No symbol) [0x0x7ff7ca67a6ff]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Register a new user account</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/register_new_user.feature:3</span><h3 onclick="Collapsible_toggle('scenario_9')" class="failed"><span class="val">Scenario: User registers with valid unique email and completes the form</span></h3><ol class="scenario_steps" id="scenario_9"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the registration page for a new user</span><small class="step_duration">(0.001s)</small></div><div class="step_file"><span>features/steps/register_new_user_steps.py:4</span></div><span class="embed" /></li><li class="step undefined"><div class="step_name"><span class="keyword">When </span><span class="step val">I enter valid registration details</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>&lt;unknown&gt;</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Remove products from cart</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/remove_products_cart.feature:3</span><h3 onclick="Collapsible_toggle('scenario_10')"><span class="val">Scenario: User adds a product to the cart and then removes all products</span></h3><ol class="scenario_steps" id="scenario_10"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the remove products cart page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/remove_products_cart_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I add a product to the cart</span><small class="step_duration">(2.244s)</small></div><div class="step_file"><span>features/steps/remove_products_cart_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I remove all products from the cart</span><small class="step_duration">(10.056s)</small></div><div class="step_file"><span>features/steps/remove_products_cart_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">Then </span><span class="step val">the cart should be empty</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/remove_products_cart_steps.py:16</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Search products</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/search_product.feature:3</span><h3 onclick="Collapsible_toggle('scenario_11')"><span class="val">Scenario: User searches for a product by name</span></h3><ol class="scenario_steps" id="scenario_11"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the search products page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/search_product_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I navigate to the products page</span><small class="step_duration">(1.240s)</small></div><div class="step_file"><span>features/steps/search_product_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val"><span>I enter the product name "</span><b>Men Tshirt</b><span>" and search</span></span><small class="step_duration">(1.090s)</small></div><div class="step_file"><span>features/steps/search_product_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">Then </span><span class="step val">the searched products should be visible</span><small class="step_duration">(0.073s)</small></div><div class="step_file"><span>features/steps/search_product_steps.py:16</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">all searched products should be displayed</span><small class="step_duration">(0.024s)</small></div><div class="step_file"><span>features/steps/search_product_steps.py:20</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Search products and add to cart after login</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/search_products_cart_after_login.feature:3</span><h3 onclick="Collapsible_toggle('scenario_12')" class="failed"><span class="val">Scenario: User searches "T-shirt", adds products to cart, logs in, and verifies cart items</span></h3><ol class="scenario_steps" id="scenario_12"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the search products cart after login page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/search_products_cart_after_login_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I go to products</span><small class="step_duration">(0.535s)</small></div><div class="step_file"><span>features/steps/search_products_cart_after_login_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val"><span>I search for product "</span><b>T-shirt</b><span>"</span></span><small class="step_duration">(0.676s)</small></div><div class="step_file"><span>features/steps/search_products_cart_after_login_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I add products to cart</span><small class="step_duration">(6.002s)</small></div><div class="step_file"><span>features/steps/search_products_cart_after_login_steps.py:16</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">And </span><span class="step val">I go to cart</span><small class="step_duration">(1.053s)</small></div><div class="step_file"><span>features/steps/search_products_cart_after_login_steps.py:20</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_5')">Error Message</a><pre id="embed_5" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\search_products_cart_after_login_steps.py", line 22, in step_impl
+    context.search_page.go_to_cart()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\search_products_cart_after_login_page.py", line 63, in go_to_cart
+    cart_btn.click()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/view_cart"&gt;...&lt;/a&gt; is not clickable at point (815, 10). Other element would receive the click: &lt;iframe id="aswift_2" name="aswift_2" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250814/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=2" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CMr4gpekko8DFZAFgwMdSPQMrA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=139.0.3405.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca65fd35]
+	(No symbol) [0x0x7ff7ca65dce3]
+	(No symbol) [0x0x7ff7ca65b75d]
+	(No symbol) [0x0x7ff7ca65a928]
+	(No symbol) [0x0x7ff7ca64fbfe]
+	(No symbol) [0x0x7ff7ca67a6ba]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca64f44d]
+	(No symbol) [0x0x7ff7ca67a980]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Subscription functionality on cart page</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/subscription_cart_page.feature:3</span><h3 onclick="Collapsible_toggle('scenario_13')" class="failed"><span class="val">Scenario: User adds product to cart and subscribes with email</span></h3><ol class="scenario_steps" id="scenario_13"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the subscription cart page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/subscription_cart_page_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val">I go to cart with a product</span><small class="step_duration">(1.125s)</small></div><div class="step_file"><span>features/steps/subscription_cart_page_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_6')">Error Message</a><pre id="embed_6" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\subscription_cart_page_steps.py", line 10, in step_impl
+    context.subscription_cart.go_to_cart_with_product()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\subscription_cart_page.py", line 11, in go_to_cart_with_product
+    add_cart_page.add_first_product_to_cart()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\add_products_cart_page.py", line 18, in add_first_product_to_cart
+    products.click_products()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\products_page.py", line 14, in click_products
+    products_button.click()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/products" style="color: orange;"&gt;...&lt;/a&gt; is not clickable at point (722, 10). Other element would receive the click: &lt;iframe id="aswift_2" name="aswift_2" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250814/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=2" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CMr4gpekko8DFZAFgwMdSPQMrA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=139.0.3405.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca65fd35]
+	(No symbol) [0x0x7ff7ca65dce3]
+	(No symbol) [0x0x7ff7ca65b75d]
+	(No symbol) [0x0x7ff7ca65a928]
+	(No symbol) [0x0x7ff7ca64fbfe]
+	(No symbol) [0x0x7ff7ca67a6ba]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca64f44d]
+	(No symbol) [0x0x7ff7ca67a980]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Subscription functionality on home page</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/subscription_home_page.feature:3</span><h3 onclick="Collapsible_toggle('scenario_14')"><span class="val">Scenario: User subscribes from the home page successfully</span></h3><ol class="scenario_steps" id="scenario_14"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the subscription home page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/subscription_home_page_steps.py:4</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">When </span><span class="step val">I scroll to the subscription section</span><small class="step_duration">(0.522s)</small></div><div class="step_file"><span>features/steps/subscription_home_page_steps.py:8</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val">I verify the subscription heading is visible</span><small class="step_duration">(0.026s)</small></div><div class="step_file"><span>features/steps/subscription_home_page_steps.py:12</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">And </span><span class="step val"><span>I enter email "</span><b>home@example.com</b><span>" and submit</span></span><small class="step_duration">(0.133s)</small></div><div class="step_file"><span>features/steps/subscription_home_page_steps.py:16</span></div><span class="embed" /></li><li class="step passed"><div class="step_name"><span class="keyword">Then </span><span class="step val">Then I should see the subscription success message on the home page</span><small class="step_duration">(0.020s)</small></div><div class="step_file"><span>features/steps/subscription_home_page_steps.py:20</span></div><span class="embed" /></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: View and verify all test cases</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/testcases.feature:3</span><h3 onclick="Collapsible_toggle('scenario_15')" class="failed"><span class="val">Scenario: User clicks the Test Cases button and verifies all test cases are visible and clickable</span></h3><ol class="scenario_steps" id="scenario_15"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the test cases page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/testcases_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val">I click the test cases button</span><small class="step_duration">(1.074s)</small></div><div class="step_file"><span>features/steps/testcases_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_7')">Error Message</a><pre id="embed_7" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\testcases_steps.py", line 10, in step_impl
+    context.testcases_page.click_test_cases_button()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\page_test_cases.py", line 14, in click_test_cases_button
+    wait.until(EC.element_to_be_clickable(locator)).click()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/test_cases"&gt;...&lt;/a&gt; is not clickable at point (1143, 10). Other element would receive the click: &lt;iframe id="aswift_2" name="aswift_2" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250814/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=2" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CMr4gpekko8DFZAFgwMdSPQMrA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=139.0.3405.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca65fd35]
+	(No symbol) [0x0x7ff7ca65dce3]
+	(No symbol) [0x0x7ff7ca65b75d]
+	(No symbol) [0x0x7ff7ca65a928]
+	(No symbol) [0x0x7ff7ca64fbfe]
+	(No symbol) [0x0x7ff7ca67a6ba]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca64f44d]
+	(No symbol) [0x0x7ff7ca67a980]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: User login with invalid credentials</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/user_login_invalid.feature:3</span><h3 onclick="Collapsible_toggle('scenario_16')" class="failed"><span class="val">Scenario: User attempts to login with incorrect email or password</span></h3><ol class="scenario_steps" id="scenario_16"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the login page for invalid login</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/login_invalid_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val">I enter invalid login details</span><small class="step_duration">(10.069s)</small></div><div class="step_file"><span>features/steps/login_invalid_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_8')">Error Message</a><pre id="embed_8" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\login_invalid_steps.py", line 10, in step_impl
+    context.login_test.user_login_data()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\login_page_invalid.py", line 10, in user_login_data
+    self.driver.find_element(By.CSS_SELECTOR,"input[data-qa='login-email']").send_keys(user['email'])
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[data-qa='login-email']"}
+  (Session info: MicrosoftEdge=139.0.3405.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca6591a8]
+	(No symbol) [0x0x7ff7ca65946b]
+	(No symbol) [0x0x7ff7ca699a67]
+	(No symbol) [0x0x7ff7ca67a6ff]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: User login with valid credentials</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/user_login_valid.feature:3</span><h3 onclick="Collapsible_toggle('scenario_17')" class="failed"><span class="val">Scenario: User logs in with correct email and password</span></h3><ol class="scenario_steps" id="scenario_17"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the login page</span><small class="step_duration">(0.001s)</small></div><div class="step_file"><span>features/steps/login_valid_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val">I enter valid login details</span><small class="step_duration">(10.052s)</small></div><div class="step_file"><span>features/steps/login_valid_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_9')">Error Message</a><pre id="embed_9" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\login_valid_steps.py", line 10, in step_impl
+    context.login_test.user_login_data()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\login_page_valid.py", line 10, in user_login_data
+    self.driver.find_element(By.CSS_SELECTOR,"input[data-qa='login-email']").send_keys(user['email'])
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[data-qa='login-email']"}
+  (Session info: MicrosoftEdge=139.0.3405.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca6591a8]
+	(No symbol) [0x0x7ff7ca65946b]
+	(No symbol) [0x0x7ff7ca699a67]
+	(No symbol) [0x0x7ff7ca67a6ff]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: Verify product quantity in cart</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/verify_cart_quantity.feature:3</span><h3 onclick="Collapsible_toggle('scenario_18')" class="failed"><span class="val">Scenario: User sets product quantity and verifies it in the cart</span></h3><ol class="scenario_steps" id="scenario_18"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the verify cart quantity page</span><small class="step_duration">(0.001s)</small></div><div class="step_file"><span>features/steps/verify_cart_quantity_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val"><span>I view product and add quantity </span><b>3</b><span /></span><small class="step_duration">(1.117s)</small></div><div class="step_file"><span>features/steps/verify_cart_quantity_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_10')">Error Message</a><pre id="embed_10" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\verify_cart_quantity_steps.py", line 10, in step_impl
+    context.cart_quantity_page.view_product_and_add_quantity(quantity)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\verify_cart_quantity_page.py", line 17, in view_product_and_add_quantity
+    products.click_products()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\products_page.py", line 14, in click_products
+    products_button.click()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 120, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 573, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/products" style="color: orange;"&gt;...&lt;/a&gt; is not clickable at point (722, 10). Other element would receive the click: &lt;iframe id="aswift_2" name="aswift_2" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250814/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=2" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CMr4gpekko8DFZAFgwMdSPQMrA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=139.0.3405.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca65fd35]
+	(No symbol) [0x0x7ff7ca65dce3]
+	(No symbol) [0x0x7ff7ca65b75d]
+	(No symbol) [0x0x7ff7ca65a928]
+	(No symbol) [0x0x7ff7ca64fbfe]
+	(No symbol) [0x0x7ff7ca67a6ba]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca64f44d]
+	(No symbol) [0x0x7ff7ca67a980]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: View and verify brand products</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/view_brand_products.feature:3</span><h3 onclick="Collapsible_toggle('scenario_19')" class="failed"><span class="val">Scenario: User clicks a brand and verifies the brand page header</span></h3><ol class="scenario_steps" id="scenario_19"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the brand products page</span><small class="step_duration">(0.000s)</small></div><div class="step_file"><span>features/steps/view_brand_products_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val"><span>I click the brand with xpath "</span><b>//a[contains(text(),'BrandName')]</b><span>"</span></span><small class="step_duration">(10.057s)</small></div><div class="step_file"><span>features/steps/view_brand_products_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_11')">Error Message</a><pre id="embed_11" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\view_brand_products_steps.py", line 10, in step_impl
+    context.brand_page.click_brand_and_verify(brand_xpath, "BrandName")  # Replace BrandName if dynamic
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\view_brand_products_page.py", line 15, in click_brand_and_verify
+    brand_elem = self.wait.until(EC.element_to_be_clickable((By.XPATH, brand_xpath)))
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca6591a8]
+	(No symbol) [0x0x7ff7ca65946b]
+	(No symbol) [0x0x7ff7ca699a67]
+	(No symbol) [0x0x7ff7ca67a6ff]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div><div class="feature"><h2><span class="val">Feature: View and verify category products</span></h2><span /></div><div class="scenario"><span class="scenario_file">features/view_category_products.feature:3</span><h3 onclick="Collapsible_toggle('scenario_20')" class="failed"><span class="val">Scenario: User clicks a category and verifies the category page header</span></h3><ol class="scenario_steps" id="scenario_20"><li class="step passed"><div class="step_name"><span class="keyword">Given </span><span class="step val">I am on the category products page</span><small class="step_duration">(0.001s)</small></div><div class="step_file"><span>features/steps/view_category_products_steps.py:4</span></div><span class="embed" /></li><li class="step failed"><div class="step_name"><span class="keyword">When </span><span class="step val"><span>I click the category with xpath "</span><b>//a[contains(text(),'CategoryName')]</b><span>"</span></span><small class="step_duration">(10.047s)</small></div><div class="step_file"><span>features/steps/view_category_products_steps.py:8</span></div><span class="embed"><a onclick="Collapsible_toggle('embed_12')">Error Message</a><pre id="embed_12" style="display: none">Traceback (most recent call last):
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features\steps\view_category_products_steps.py", line 10, in step_impl
+    context.category_page.click_category_and_verify(category_xpath, "CategoryName")  # Replace CategoryName if dynamic
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akash\PycharmProjects\Practicepython\selenium_tests\pages\view_category_products_page.py", line 14, in click_category_and_verify
+    category_elem = self.wait.until(EC.element_to_be_clickable((By.XPATH, category_xpath)))
+  File "C:\Users\akash\PycharmProjects\Practicepython\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ca8e81f5+23461]
+	(No symbol) [0x0x7ff7ca83c2e0]
+	GetHandleVerifier [0x0x7ff7cab60128+2611928]
+	(No symbol) [0x0x7ff7ca6591a8]
+	(No symbol) [0x0x7ff7ca65946b]
+	(No symbol) [0x0x7ff7ca699a67]
+	(No symbol) [0x0x7ff7ca67a6ff]
+	(No symbol) [0x0x7ff7ca64f58d]
+	(No symbol) [0x0x7ff7ca69754f]
+	(No symbol) [0x0x7ff7ca67a423]
+	(No symbol) [0x0x7ff7ca64ea86]
+	(No symbol) [0x0x7ff7ca64dd11]
+	(No symbol) [0x0x7ff7ca64e8b3]
+	(No symbol) [0x0x7ff7ca74dd3d]
+	(No symbol) [0x0x7ff7ca75b0c8]
+	GetHandleVerifier [0x0x7ff7ca9c803b+940523]
+	GetHandleVerifier [0x0x7ff7ca9d0d91+976705]
+	(No symbol) [0x0x7ff7ca849ed1]
+	(No symbol) [0x0x7ff7ca8428b4]
+	(No symbol) [0x0x7ff7ca842a03]
+	(No symbol) [0x0x7ff7ca8344a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+
+</pre>    </span></li></ol><span /></div></div></body></html>

@@ -1,0 +1,6 @@
+Name: Blue Top
+Category: Category: Women > Tops
+Price: Rs. 500
+Availability: In Stock
+Condition: New
+Brand: Polo

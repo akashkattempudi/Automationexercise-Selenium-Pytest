@@ -1,10 +1,6 @@
-# Selenium imports
-from selenium.webdriver.remote.webdriver import WebDriver        # for type hinting 'driver'
-from selenium.webdriver.common.by import By                       # for locating elements
-from selenium.webdriver.support.ui import WebDriverWait           # for explicit waits
-from selenium.webdriver.support import expected_conditions as EC   # for EC.element_to_be_clickable
 
-# Your page objects imports
+from selenium.webdriver.remote.webdriver import WebDriver        # for type hinting 'driver'
+
 from selenium_tests.pages.login_page_valid import login_page
 from selenium_tests.pages.add_products_cart_page import add_products_cart_page
 

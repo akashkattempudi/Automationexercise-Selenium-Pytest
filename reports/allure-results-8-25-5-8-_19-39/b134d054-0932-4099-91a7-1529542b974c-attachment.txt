@@ -1,0 +1,23 @@
+Alert Text: Press OK to proceed!
+Message: unexpected alert open: {Alert text : Press OK to proceed!}
+  (Session info: MicrosoftEdge=139.0.3405.102)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff748fa81f5+23461]
+	(No symbol) [0x0x7ff748efc2e0]
+	GetHandleVerifier [0x0x7ff749220128+2611928]
+	(No symbol) [0x0x7ff748d57a0a]
+	(No symbol) [0x0x7ff748d3a423]
+	(No symbol) [0x0x7ff748d0ea86]
+	(No symbol) [0x0x7ff748d0dd11]
+	(No symbol) [0x0x7ff748d0e8b3]
+	(No symbol) [0x0x7ff748e0dd3d]
+	(No symbol) [0x0x7ff748e1b0c8]
+	GetHandleVerifier [0x0x7ff74908803b+940523]
+	GetHandleVerifier [0x0x7ff749090d91+976705]
+	(No symbol) [0x0x7ff748f09ed1]
+	(No symbol) [0x0x7ff748f028b4]
+	(No symbol) [0x0x7ff748f02a03]
+	(No symbol) [0x0x7ff748ef44a6]
+	BaseThreadInitThunk [0x0x7ff8085de8d7+23]
+	RtlUserThreadStart [0x0x7ff80899c34c+44]
+

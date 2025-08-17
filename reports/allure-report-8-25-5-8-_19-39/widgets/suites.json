@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"16faea1a8b1d966d357ba7144ed6b1bb","name":"selenium_tests.pytest_pages","statistic":{"failed":1,"broken":5,"skipped":0,"passed":15,"unknown":0,"total":21}},{"uid":"1359dd897b4414cbb3deb841be79db00","name":"selenium_tests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}

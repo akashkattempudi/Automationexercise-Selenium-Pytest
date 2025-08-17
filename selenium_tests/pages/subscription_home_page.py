@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# ------------------ Test Case 10: Verify Subscription in Home Page ------------------
 class subscription_home_page:
     def __init__(self, driver: WebDriver, timeout=10):
         self.driver = driver
