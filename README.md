@@ -1,15 +1,6 @@
 Automationexercise – Selenium + Pytest + Behave
 
-
-
-
-
-
-
-
-
-
-End-to-end Selenium automation framework using Python, Pytest, Behave (BDD), and POM design pattern for the Automation Exercise demo application.
+This repository contains an end-to-end Selenium automation framework built using Python, Pytest, Behave (BDD), and the Page Object Model (POM) design pattern. It automates functional testing for the Automation Exercise demo application.
 
 🚀 Features
 
@@ -17,18 +8,17 @@ Selenium WebDriver for browser automation
 
 Pytest for test execution and reporting
 
-Behave for BDD-style scenarios
+Behave for BDD-style test scenarios
 
-Page Object Model (POM) for reusable & maintainable code
+Page Object Model (POM) for reusable and maintainable code
 
 HTML and Allure test reports generated automatically
 
-Pytest fixtures & hooks (conftest.py) for setup & teardown
+Pytest fixtures and hooks (conftest.py) for setup & teardown
 
 Automated test execution using run_bdd_pytest.bat
 
 📂 Project Structure
-<details> <summary>Click to expand</summary>
 Automationexercise-Selenium-Pytest/
 │── selenium_tests/
 │   ├── pages/        # Page object classes (locators + actions)
@@ -40,9 +30,7 @@ Automationexercise-Selenium-Pytest/
 │── run_bdd_pytest.bat # Batch file to run tests automatically
 │── requirements.txt   # Dependencies
 
-</details>
 ⚙️ Installation & Setup
-<details> <summary>Click to expand</summary>
 
 Clone the repository
 
@@ -65,9 +53,7 @@ Install dependencies
 
 pip install -r requirements.txt
 
-</details>
 ▶️ Running Tests
-<details> <summary>Click to expand</summary>
 
 Run all tests (HTML report)
 
@@ -94,26 +80,13 @@ Run a specific Pytest file
 
 pytest selenium_tests/test_pages/test_login.py -v
 
-</details>
 📊 Reports
-<details> <summary>Click to expand</summary>
 
 HTML report: Detailed browser-based test report in reports/
 
-Allure report: Interactive, visually rich report in reports/allure-results/
+Allure report: Interactive and visually rich report in reports/allure-results/
 
-Both reports provide detailed insights into test execution, failures, and screenshots (if configured).
-
-</details>
-✅ Current Status
-
-Selenium + Pytest + Behave framework is fully set up
-
-HTML & Allure reports configured
-
-Tests implemented for login, registration, cart functionality
-
-Utilities and helper methods available
+Both reports give detailed insights into test execution, failures, and screenshots (if configured).
 
 🛠️ Tech Stack
 
@@ -126,25 +99,3 @@ Test Runner: Pytest, Behave (BDD)
 Reports: pytest-html, Allure
 
 Design Pattern: Page Object Model (POM)
-
-📋 Project Roadmap
-
-Add more test cases (checkout, search, etc.)
-
-Cross-browser testing
-
-Integrate with CI/CD pipelines (GitHub Actions, Jenkins)
-
-Add screenshots for failed tests automatically
-
-Improve test coverage and maintainability
-
-🤝 Contribution Guidelines
-
-Fork the repository
-
-Create a branch for new features/fixes
-
-Follow the POM structure for new tests
-
-Submit a pull request for review
