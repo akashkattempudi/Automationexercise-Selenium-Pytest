@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) 
+![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white) 
+![BDD](https://img.shields.io/badge/BDD-Behave-red?style=for-the-badge&logo=behave&logoColor=white)
+
 Ecommerce-automation-selenium-pytest-bdd
 
 This repository contains an end-to-end Selenium automation framework built using Python, Pytest, Behave (BDD), and the Page Object Model (POM) design pattern. It automates functional testing for the Automation Exercise demo application.
